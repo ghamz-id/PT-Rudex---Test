@@ -1,0 +1,389 @@
+{
+  "sales": [
+    {
+      "id": "1",
+      "product": "Product A",
+      "date": "2023-01-01",
+      "sales": 150,
+      "revenue": 3000
+    },
+    {
+      "id": "2",
+      "product": "Product B",
+      "date": "2023-01-02",
+      "sales": 100,
+      "revenue": 2000
+    },
+    {
+      "id": "3",
+      "product": "Product C",
+      "date": "2023-01-03",
+      "sales": 120,
+      "revenue": 2400
+    },
+    {
+      "id": "4",
+      "product": "Product D",
+      "date": "2023-01-04",
+      "sales": 80,
+      "revenue": 1600
+    },
+    {
+      "id": "5",
+      "product": "Product E",
+      "date": "2023-01-05",
+      "sales": 200,
+      "revenue": 4000
+    },
+    {
+      "id": "6",
+      "product": "Product A",
+      "date": "2023-01-06",
+      "sales": 180,
+      "revenue": 3600
+    },
+    {
+      "id": "7",
+      "product": "Product A",
+      "date": "2023-01-07",
+      "sales": 90,
+      "revenue": 1800
+    },
+    {
+      "id": "8",
+      "product": "Product A",
+      "date": "2023-01-08",
+      "sales": 110,
+      "revenue": 2200
+    },
+    {
+      "id": "9",
+      "product": "Product A",
+      "date": "2023-01-09",
+      "sales": 130,
+      "revenue": 2600
+    },
+    {
+      "id": "10",
+      "product": "Product A",
+      "date": "2023-01-10",
+      "sales": 70,
+      "revenue": 1400
+    },
+    {
+      "id": "11",
+      "product": "Product A",
+      "date": "2023-01-11",
+      "sales": 190,
+      "revenue": 3800
+    },
+    {
+      "id": "12",
+      "product": "Product A",
+      "date": "2023-01-12",
+      "sales": 100,
+      "revenue": 2000
+    },
+    {
+      "id": "13",
+      "product": "Product A",
+      "date": "2023-01-13",
+      "sales": 120,
+      "revenue": 2400
+    },
+    {
+      "id": "14",
+      "product": "Product A",
+      "date": "2023-01-14",
+      "sales": 60,
+      "revenue": 1200
+    },
+    {
+      "id": "15",
+      "product": "Product A",
+      "date": "2023-01-15",
+      "sales": 140,
+      "revenue": 2800
+    },
+    {
+      "id": "16",
+      "product": "Product B",
+      "date": "2023-01-06",
+      "sales": 180,
+      "revenue": 3600
+    },
+    {
+      "id": "17",
+      "product": "Product B",
+      "date": "2023-01-07",
+      "sales": 90,
+      "revenue": 1800
+    },
+    {
+      "id": "18",
+      "product": "Product B",
+      "date": "2023-01-08",
+      "sales": 110,
+      "revenue": 2200
+    },
+    {
+      "id": "19",
+      "product": "Product B",
+      "date": "2023-01-09",
+      "sales": 130,
+      "revenue": 2600
+    },
+    {
+      "id": "20",
+      "product": "Product B",
+      "date": "2023-01-10",
+      "sales": 70,
+      "revenue": 1400
+    },
+    {
+      "id": "21",
+      "product": "Product B",
+      "date": "2023-01-11",
+      "sales": 190,
+      "revenue": 3800
+    },
+    {
+      "id": "22",
+      "product": "Product B",
+      "date": "2023-01-12",
+      "sales": 100,
+      "revenue": 2000
+    },
+    {
+      "id": "23",
+      "product": "Product B",
+      "date": "2023-01-13",
+      "sales": 120,
+      "revenue": 2400
+    },
+    {
+      "id": "24",
+      "product": "Product B",
+      "date": "2023-01-14",
+      "sales": 60,
+      "revenue": 1200
+    },
+    {
+      "id": "25",
+      "product": "Product B",
+      "date": "2023-01-15",
+      "sales": 140,
+      "revenue": 2800
+    },
+    {
+      "id": "26",
+      "product": "Product C",
+      "date": "2023-01-06",
+      "sales": 180,
+      "revenue": 3600
+    },
+    {
+      "id": "27",
+      "product": "Product C",
+      "date": "2023-01-07",
+      "sales": 90,
+      "revenue": 1800
+    },
+    {
+      "id": "28",
+      "product": "Product C",
+      "date": "2023-01-08",
+      "sales": 110,
+      "revenue": 2200
+    },
+    {
+      "id": "29",
+      "product": "Product C",
+      "date": "2023-01-09",
+      "sales": 130,
+      "revenue": 2600
+    },
+    {
+      "id": "30",
+      "product": "Product C",
+      "date": "2023-01-10",
+      "sales": 70,
+      "revenue": 1400
+    },
+    {
+      "id": "31",
+      "product": "Product C",
+      "date": "2023-01-11",
+      "sales": 190,
+      "revenue": 3800
+    },
+    {
+      "id": "32",
+      "product": "Product C",
+      "date": "2023-01-12",
+      "sales": 100,
+      "revenue": 2000
+    },
+    {
+      "id": "33",
+      "product": "Product C",
+      "date": "2023-01-13",
+      "sales": 120,
+      "revenue": 2400
+    },
+    {
+      "id": "34",
+      "product": "Product C",
+      "date": "2023-01-14",
+      "sales": 60,
+      "revenue": 1200
+    },
+    {
+      "id": "35",
+      "product": "Product C",
+      "date": "2023-01-15",
+      "sales": 140,
+      "revenue": 2800
+    },
+    {
+      "id": "36",
+      "product": "Product D",
+      "date": "2023-01-06",
+      "sales": 180,
+      "revenue": 3600
+    },
+    {
+      "id": "37",
+      "product": "Product D",
+      "date": "2023-01-07",
+      "sales": 90,
+      "revenue": 1800
+    },
+    {
+      "id": "38",
+      "product": "Product D",
+      "date": "2023-01-08",
+      "sales": 110,
+      "revenue": 2200
+    },
+    {
+      "id": "39",
+      "product": "Product D",
+      "date": "2023-01-09",
+      "sales": 130,
+      "revenue": 2600
+    },
+    {
+      "id": "40",
+      "product": "Product D",
+      "date": "2023-01-10",
+      "sales": 70,
+      "revenue": 1400
+    },
+    {
+      "id": "41",
+      "product": "Product D",
+      "date": "2023-01-11",
+      "sales": 190,
+      "revenue": 3800
+    },
+    {
+      "id": "42",
+      "product": "Product D",
+      "date": "2023-01-12",
+      "sales": 100,
+      "revenue": 2000
+    },
+    {
+      "id": "43",
+      "product": "Product D",
+      "date": "2023-01-13",
+      "sales": 120,
+      "revenue": 2400
+    },
+    {
+      "id": "44",
+      "product": "Product D",
+      "date": "2023-01-14",
+      "sales": 60,
+      "revenue": 1200
+    },
+    {
+      "id": "45",
+      "product": "Product D",
+      "date": "2023-01-15",
+      "sales": 140,
+      "revenue": 2800
+    },
+    {
+      "id": "46",
+      "product": "Product E",
+      "date": "2023-01-06",
+      "sales": 180,
+      "revenue": 3600
+    },
+    {
+      "id": "47",
+      "product": "Product E",
+      "date": "2023-01-07",
+      "sales": 90,
+      "revenue": 1800
+    },
+    {
+      "id": "48",
+      "product": "Product E",
+      "date": "2023-01-08",
+      "sales": 110,
+      "revenue": 2200
+    },
+    {
+      "id": "49",
+      "product": "Product E",
+      "date": "2023-01-09",
+      "sales": 130,
+      "revenue": 2600
+    },
+    {
+      "id": "50",
+      "product": "Product E",
+      "date": "2023-01-10",
+      "sales": 70,
+      "revenue": 1400
+    },
+    {
+      "id": "51",
+      "product": "Product E",
+      "date": "2023-01-11",
+      "sales": 190,
+      "revenue": 3800
+    },
+    {
+      "id": "52",
+      "product": "Product E",
+      "date": "2023-01-12",
+      "sales": 100,
+      "revenue": 2000
+    },
+    {
+      "id": "53",
+      "product": "Product E",
+      "date": "2023-01-13",
+      "sales": 120,
+      "revenue": 2400
+    },
+    {
+      "id": "54",
+      "product": "Product E",
+      "date": "2023-01-14",
+      "sales": 60,
+      "revenue": 1200
+    },
+    {
+      "id": "55",
+      "product": "Product E",
+      "date": "2023-01-15",
+      "sales": 140,
+      "revenue": 2800
+    }
+  ]
+}
