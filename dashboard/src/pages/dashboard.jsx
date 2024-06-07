@@ -2,8 +2,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { salesFetch } from "../redux/sales.slice";
 import SalesTable from "../components/SalesTable/SalesTable";
-import BarComponent from "../components/SalesCharts/BarChart";
+import BarComponent from "../components/SalesCharts/barChart";
 import LineComponent from "../components/SalesCharts/lineChart";
+import DateFilter from "../components/DateFilter/dateFilter";
 
 export default function DashboardPages() {
 	const dispatch = useDispatch();
@@ -14,11 +15,8 @@ export default function DashboardPages() {
 	}, [params]);
 
 	const handleChange = (e) => {
-		if (e.target.value) {
-			setParams({ ...params, [e.target.name]: e.target.value });
-		} else {
-			setParams({});
-		}
+		const { name, value } = e.target;
+		value ? setParams({ ...params, [name]: value }) : setParams({});
 	};
 
 	const totalSales = [];
@@ -45,26 +43,7 @@ export default function DashboardPages() {
 					<SalesTable sales={sales} handleChange={handleChange} />
 				</div>
 				<div className="ms-10">
-					<div className="flex gap-6">
-						<div className="flex flex-col">
-							<label htmlFor="date_gte">Start</label>
-							<input
-								type="date"
-								name="date_gte"
-								onChange={handleChange}
-								className="border border-black"
-							/>
-						</div>
-						<div className="flex flex-col">
-							<label htmlFor="date_lte">End</label>
-							<input
-								type="date"
-								name="date_lte"
-								onChange={handleChange}
-								className="border border-black"
-							/>
-						</div>
-					</div>
+					<DateFilter handleChange={handleChange} />
 					<BarComponent sales={sales} />
 					<LineComponent sales={sales} />
 					<div>
