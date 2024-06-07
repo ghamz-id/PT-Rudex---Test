@@ -43,7 +43,7 @@ export default function LineComponent({ sales }) {
 			<Line
 				type="monotone"
 				dataKey="sales"
-				stroke="#8884d8"
+				stroke="#82ca9d"
 				activeDot={{ r: 8 }}
 			/>
 		</LineChart>
