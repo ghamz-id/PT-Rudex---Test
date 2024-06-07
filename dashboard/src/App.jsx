@@ -1,13 +1,9 @@
-import SalesTable from "./components/SalesTable";
-import SalesChart from "./components/SalesChart";
+import DashboardPages from "./pages/dashboard";
 
 export default function App() {
 	return (
 		<>
-			<div className="flex">
-				<SalesTable />
-				<SalesChart />
-			</div>
+			<DashboardPages />
 		</>
 	);
 }

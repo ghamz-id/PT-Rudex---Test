@@ -37,14 +37,14 @@
     },
     {
       "id": "6",
-      "product": "Product A",
+      "product": "Product F",
       "date": "2023-01-06",
       "sales": 180,
       "revenue": 3600
     },
     {
       "id": "7",
-      "product": "Product A",
+      "product": "Product G",
       "date": "2023-01-07",
       "sales": 90,
       "revenue": 1800
@@ -65,63 +65,63 @@
     },
     {
       "id": "10",
-      "product": "Product A",
+      "product": "Product B",
       "date": "2023-01-10",
       "sales": 70,
       "revenue": 1400
     },
     {
       "id": "11",
-      "product": "Product A",
+      "product": "Product C",
       "date": "2023-01-11",
       "sales": 190,
       "revenue": 3800
     },
     {
       "id": "12",
-      "product": "Product A",
+      "product": "Product D",
       "date": "2023-01-12",
       "sales": 100,
       "revenue": 2000
     },
     {
       "id": "13",
-      "product": "Product A",
+      "product": "Product F",
       "date": "2023-01-13",
       "sales": 120,
       "revenue": 2400
     },
     {
       "id": "14",
-      "product": "Product A",
+      "product": "Product E",
       "date": "2023-01-14",
       "sales": 60,
       "revenue": 1200
     },
     {
       "id": "15",
-      "product": "Product A",
+      "product": "Product G",
       "date": "2023-01-15",
       "sales": 140,
       "revenue": 2800
     },
     {
       "id": "16",
-      "product": "Product B",
+      "product": "Product H",
       "date": "2023-01-06",
       "sales": 180,
       "revenue": 3600
     },
     {
       "id": "17",
-      "product": "Product B",
+      "product": "Product I",
       "date": "2023-01-07",
       "sales": 90,
       "revenue": 1800
     },
     {
       "id": "18",
-      "product": "Product B",
+      "product": "Product J",
       "date": "2023-01-08",
       "sales": 110,
       "revenue": 2200
@@ -135,42 +135,42 @@
     },
     {
       "id": "20",
-      "product": "Product B",
+      "product": "Product J",
       "date": "2023-01-10",
       "sales": 70,
       "revenue": 1400
     },
     {
       "id": "21",
-      "product": "Product B",
+      "product": "Product G",
       "date": "2023-01-11",
       "sales": 190,
       "revenue": 3800
     },
     {
       "id": "22",
-      "product": "Product B",
+      "product": "Product J",
       "date": "2023-01-12",
       "sales": 100,
       "revenue": 2000
     },
     {
       "id": "23",
-      "product": "Product B",
+      "product": "Product G",
       "date": "2023-01-13",
       "sales": 120,
       "revenue": 2400
     },
     {
       "id": "24",
-      "product": "Product B",
+      "product": "Product I",
       "date": "2023-01-14",
       "sales": 60,
       "revenue": 1200
     },
     {
       "id": "25",
-      "product": "Product B",
+      "product": "Product I",
       "date": "2023-01-15",
       "sales": 140,
       "revenue": 2800
@@ -191,35 +191,35 @@
     },
     {
       "id": "28",
-      "product": "Product C",
+      "product": "Product F",
       "date": "2023-01-08",
       "sales": 110,
       "revenue": 2200
     },
     {
       "id": "29",
-      "product": "Product C",
+      "product": "Product G",
       "date": "2023-01-09",
       "sales": 130,
       "revenue": 2600
     },
     {
       "id": "30",
-      "product": "Product C",
+      "product": "Product J",
       "date": "2023-01-10",
       "sales": 70,
       "revenue": 1400
     },
     {
       "id": "31",
-      "product": "Product C",
+      "product": "Product F",
       "date": "2023-01-11",
       "sales": 190,
       "revenue": 3800
     },
     {
       "id": "32",
-      "product": "Product C",
+      "product": "Product I",
       "date": "2023-01-12",
       "sales": 100,
       "revenue": 2000

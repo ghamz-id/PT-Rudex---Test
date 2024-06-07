@@ -1,30 +1,14 @@
-import { useDispatch, useSelector } from "react-redux";
-import { useEffect, useState } from "react";
-import { salesFetch } from "../redux/sales.slice";
-
-export default function SalesTable() {
-	const [params, setParams] = useState({});
-	const dispatch = useDispatch();
-	const { sales } = useSelector((state) => state.sales);
-	useEffect(() => {
-		dispatch(salesFetch(params));
-	}, [params]);
-
-	const handleChange = (e) => {
-		setParams({ ...params, [e.target.name]: e.target.value });
-	};
-
+export default function SalesTable({ sales, handleChange }) {
 	return (
-		<div>
-			<div>
-				<label htmlFor="product">Search</label>
-				<input
-					type="text"
-					className="border"
-					name="product"
-					onChange={handleChange}
-				/>
-			</div>
+		<div className="h-96 overflow-y-scroll">
+			<h1>TABLE DATA</h1>
+			<label htmlFor="product">Search</label>
+			<input
+				type="text"
+				className="border"
+				name="product"
+				onChange={handleChange}
+			/>
 			<table className="table-auto">
 				<thead>
 					<tr>
@@ -52,8 +36,6 @@ export default function SalesTable() {
 					))}
 				</tbody>
 			</table>
-
-			
 		</div>
 	);
 }

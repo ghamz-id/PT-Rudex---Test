@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
-import { BASE_URL } from "../constants";
 
 // ---------------- CREATE REDUSER ----------------
 const slicer = createSlice({
@@ -17,6 +16,7 @@ const slicer = createSlice({
 const { sales } = slicer.actions;
 
 // ---------------- ASYNC THUNK ----------------
+
 export function salesFetch(params) {
 	return async (dispatch) => {
 		try {
@@ -33,3 +33,4 @@ export function salesFetch(params) {
 }
 
 export default slicer.reducer;
+export const BASE_URL = "http://localhost:3000";
