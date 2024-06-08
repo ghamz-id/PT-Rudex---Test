@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import {
 	BarChart,
 	Bar,
@@ -9,29 +10,14 @@ import {
 	Legend,
 } from "recharts";
 
-export default function BarComponent({ sales }) {
-	const totalSales = [];
-	sales.forEach((item) => {
-		const index = totalSales.findIndex(
-			(total) => total.product === item.product
-		);
-		if (index === -1) {
-			totalSales.push({
-				product: item.product,
-				sales: item.sales,
-				revenue: item.revenue,
-			});
-		} else {
-			totalSales[index].revenue += item.revenue;
-			totalSales[index].sales += item.sales;
-		}
-	});
+export default function BarComponent() {
+	const { salesByProducts } = useSelector((state) => state.data);
 
 	return (
 		<BarChart
 			width={1000}
 			height={300}
-			data={totalSales}
+			data={salesByProducts}
 			margin={{
 				top: 20,
 				right: 30,

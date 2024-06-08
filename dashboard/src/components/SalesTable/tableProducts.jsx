@@ -1,4 +1,16 @@
-export default function SalesTable({ sales, handleChange }) {
+import { useSelector } from "react-redux";
+
+export default function SalesTable({ handleChange }) {
+	const { dataSales } = useSelector((state) => state.data);
+	const codeProduct = dataSales.map((item) => {
+		const code = item.product
+			.split(" ")
+			.map((word) => word[0].toUpperCase())
+			.join("");
+		const codeDate = item.date.split("-").join("");
+		return `#${code}-${codeDate}`;
+	});
+
 	return (
 		<div className="h-screen">
 			<label htmlFor="product">Search</label>
@@ -13,6 +25,7 @@ export default function SalesTable({ sales, handleChange }) {
 					<thead>
 						<tr>
 							<th className="border px-4 py-2 w-10">No</th>
+							<th className="border px-4 py-2">Code Product</th>
 							<th className="border px-4 py-2">Product</th>
 							<th className="border px-4 py-2">Date</th>
 							<th className="border px-4 py-2">Sales</th>
@@ -20,9 +33,10 @@ export default function SalesTable({ sales, handleChange }) {
 						</tr>
 					</thead>
 					<tbody>
-						{sales.map((item, idx) => (
-							<tr key={idx}>
-								<td className="border px-4 py-2">{idx + 1}</td>
+						{dataSales.map((item, i) => (
+							<tr key={i}>
+								<td className="border px-4 py-2">{i + 1}</td>
+								<td className="border px-4 py-2">{codeProduct[i]}</td>
 								<td className="border px-4 py-2">{item.product}</td>
 								<td className="border px-4 py-2">{item.date}</td>
 								<td className="border px-4 py-2">{item.sales}</td>

@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import {
 	LineChart,
 	Line,
@@ -9,17 +10,18 @@ import {
 	Legend,
 } from "recharts";
 
-export default function LineComponent({ sales }) {
-	const totalSales = [];
-	sales.forEach((item) => {
-		const index = totalSales.findIndex((total) => total.date === item.date);
+export default function LineComponent() {
+	const { dataSales } = useSelector((state) => state.data);
+	const salesByDate = [];
+	dataSales.forEach((item) => {
+		const index = salesByDate.findIndex((total) => total.date === item.date);
 		if (index === -1) {
-			totalSales.push({
+			salesByDate.push({
 				date: item.date,
 				sales: item.sales,
 			});
 		} else {
-			totalSales[index].sales += item.sales;
+			salesByDate[index].sales += item.sales;
 		}
 	});
 
@@ -27,7 +29,7 @@ export default function LineComponent({ sales }) {
 		<LineChart
 			width={1000}
 			height={300}
-			data={totalSales}
+			data={salesByDate}
 			margin={{
 				top: 5,
 				right: 30,
