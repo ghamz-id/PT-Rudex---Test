@@ -4,10 +4,10 @@ import {
 	LineChart,
 	Line,
 	XAxis,
-	YAxis,
 	CartesianGrid,
 	Tooltip,
 	Legend,
+	YAxis,
 } from "recharts";
 
 export default function LineComponent() {
@@ -27,25 +27,24 @@ export default function LineComponent() {
 
 	return (
 		<LineChart
-			width={1000}
+			width={900}
 			height={300}
 			data={salesByDate}
 			margin={{
 				top: 5,
 				right: 30,
-				left: 20,
 				bottom: 5,
 			}}
 		>
 			<CartesianGrid strokeDasharray="3 3" />
-			<XAxis dataKey="date" />
+			<XAxis dataKey="date" className="italic text-sm" />
 			<YAxis />
 			<Tooltip />
 			<Legend />
 			<Line
 				type="monotone"
 				dataKey="sales"
-				stroke="#82ca9d"
+				stroke="#135bb9"
 				activeDot={{ r: 8 }}
 			/>
 		</LineChart>

@@ -1,24 +1,30 @@
 export default function DateFilter({ handleChange }) {
 	return (
 		<div className="flex gap-6">
-			<div className="flex flex-col">
-				<label htmlFor="start_date">Start</label>
+			<label className="form-control w-full max-w-xs">
+				<div className="label">
+					<span className="label-text font-semibold">Start Date :</span>
+				</div>
 				<input
 					type="date"
+					placeholder="Type here"
+					className="input input-sm input-bordered border border-slate-400 w-full max-w-xs"
+					onChange={handleChange}
 					name="start_date"
-					onChange={handleChange}
-					className="border border-black"
 				/>
-			</div>
-			<div className="flex flex-col">
-				<label htmlFor="end_date">End</label>
+			</label>
+			<label className="form-control w-full max-w-xs">
+				<div className="label">
+					<span className="label-text font-semibold">End Date :</span>
+				</div>
 				<input
 					type="date"
-					name="end_date"
+					placeholder="Type here"
+					className="input input-sm input-bordered border border-slate-400 w-full max-w-xs"
 					onChange={handleChange}
-					className="border border-black"
+					name="end_date"
 				/>
-			</div>
+			</label>
 		</div>
 	);
 }
