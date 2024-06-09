@@ -9,9 +9,12 @@ export default function PopularProducts() {
 
 	return (
 		<>
-			<div className="w-80 h-fit bg-white p-1">
+			<div className="w-80 h-fit bg-white p-1 max-sm:w-full max-lg:w-full">
 				{popularProducts.map((item, i) => (
-					<div key={i} className="flex border-b justify-between">
+					<div
+						key={i}
+						className="flex border-b justify-between max-sm:px-1 max-lg:px-4"
+					>
 						<div className="flex p-2 gap-2">
 							<img
 								src={`https://picsum.photos/id/${i}/200/300`}

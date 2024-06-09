@@ -8,6 +8,7 @@ import {
 	Tooltip,
 	Legend,
 	YAxis,
+	ResponsiveContainer,
 } from "recharts";
 
 export default function LineComponent() {
@@ -26,27 +27,25 @@ export default function LineComponent() {
 	});
 
 	return (
-		<LineChart
-			width={900}
-			height={300}
-			data={salesByDate}
-			margin={{
-				top: 5,
-				right: 30,
-				bottom: 5,
-			}}
-		>
-			<CartesianGrid strokeDasharray="3 3" />
-			<XAxis dataKey="date" className="italic text-sm" />
-			<YAxis />
-			<Tooltip />
-			<Legend />
-			<Line
-				type="monotone"
-				dataKey="sales"
-				stroke="#135bb9"
-				activeDot={{ r: 8 }}
-			/>
-		</LineChart>
+		<div className="bg-white shadow-lg rounded-lg flex flex-col items-center justify-center border border-slate-400">
+			<h1 className="w-full font-bold px-3 py-1 text-lg max-sm:text-sm max-lg:text-sm text-slate-500">
+				Total Sales / Days
+			</h1>
+			<ResponsiveContainer width="100%" minHeight={200} maxHeight={250}>
+				<LineChart width={800} height={250} data={salesByDate} className="pe-3">
+					<CartesianGrid strokeDasharray="3 3" />
+					<XAxis dataKey="date" className="max-sm:text-xs max-lg:text-xs" />
+					<YAxis className="max-sm:text-xs max-lg:text-xs" />
+					<Tooltip className="max-sm:text-xs max-lg:text-xs" />
+					<Legend className="max-sm:text-xs max-lg:text-xs" />
+					<Line
+						type="monotone"
+						dataKey="sales"
+						stroke="#135bb9"
+						activeDot={{ r: 8 }}
+					/>
+				</LineChart>
+			</ResponsiveContainer>
+		</div>
 	);
 }
